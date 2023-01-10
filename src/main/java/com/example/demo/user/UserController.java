@@ -37,7 +37,7 @@ public class UserController {
 		else {
 			session.setAttribute("UserId", info.getId());
 			mv.addObject("check", "Success Login");
-			mv.setViewName("redirect:/main.do");
+			mv.setViewName("main");
 		}
 		return mv;
 	}
@@ -47,7 +47,7 @@ public class UserController {
 		ModelAndView mv = new ModelAndView();
 		session.invalidate();
 		mv.addObject("check", "Success Logout");
-		mv.setViewName("redirect:/main.do");
+		mv.setViewName("main");
 		return mv;
 	}
 	
