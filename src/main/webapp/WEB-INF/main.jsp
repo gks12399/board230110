@@ -15,6 +15,7 @@
 	Main Page
 	
 	<br>
+	<button onclick="location.href='/userAdd.do'">Add User</button>
 	<button onclick="location.href='/login.do'">login</button>
 	<button onclick="location.href='/logout.do'">logout</button>
 	<button onclick="location.href='/board.do'">board</button>

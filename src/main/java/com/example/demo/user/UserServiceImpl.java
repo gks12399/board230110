@@ -1,5 +1,7 @@
 package com.example.demo.user;
 
+import java.util.HashMap;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,4 +16,14 @@ public class UserServiceImpl implements UserService{
 		return userMapper.login(user);
 	}
 	
+	@Override
+	public int findId(String id) {
+		int cnt = userMapper.findId(id);
+		return cnt;
+	}
+	
+	@Override
+	public void userAdd(HashMap<String, Object> map) {
+		userMapper.userAdd(map);
+	}
 }

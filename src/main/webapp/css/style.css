@@ -1,2 +1,21 @@
 @charset "UTF-8";
 
+.idSuccess {
+	display: none;
+	color: blue;
+}
+
+.idError {
+	display: none;
+	color: red;
+}
+
+.pwSuccess {
+	display: none;
+	color: blue;
+}
+
+.pwError {
+	display: none;
+	color: red;
+}

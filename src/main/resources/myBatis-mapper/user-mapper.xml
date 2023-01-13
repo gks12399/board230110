@@ -11,4 +11,17 @@
            AND pw = #{pw}
     </select>
     
+    <select id="findId" parameterType="String" resultType="int">
+        SELECT COUNT(id) 
+          FROM user
+         WHERE id = #{id}
+    </select> 
+
+	<insert id="userAdd" parameterType="hashmap" useGeneratedKeys="true">
+		INSERT INTO user
+			(id, pw, cre_date)
+		VALUES
+			(#{id}, #{pw}, NOW())
+	</insert>
+    
 </mapper>
